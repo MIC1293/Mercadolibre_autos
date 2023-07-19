@@ -67,7 +67,7 @@ for modelo, precio in zip(modelos, precios):
     print(f"{modelo}: ${precio}") """
 
 def plantilla(modelos,precios):
-    filein = open("autos/plantilla_merc.html")
+    filein = open("Mercadolibre_autos/mercado_plantilla_base.html")
     src = Template(filein.read()) #Para leer el archivo
     for modelo, precio in zip(modelos, precios):
         D = {"modelo":modelo, "precio":precio}
